@@ -24,6 +24,8 @@ public class RunScreenShot {
         File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         //now copy the screenshot to dsired location using copyFile//method
         FileUtils.copyFile(src, new File("C:\\Users\\bahti\\OneDrive\\Pictures\\Screenshots\\facebook.png"));
+       
+        //new added
         driver.close();
     }
 
